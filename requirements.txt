@@ -28,7 +28,7 @@ Pillow==9.4.0
 platformdirs==3.10.0
 PyAutoGUI==0.9.53
 pycodestyle==2.8.0
-pygame==2.1.2
+# pygame==2.1.2
 PyGetWindow==0.0.9
 PyJWT==2.4.0
 PyMsgBox==1.0.9
