@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-x6d#&nd8%&b)6q#@1kwkn!6$rjbqk@q!)w+d7r4h*8xff@i%ts
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['django-react-to-do-list-3.onrender.com']
 
 
 # Application definition
