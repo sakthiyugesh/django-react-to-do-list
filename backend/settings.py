@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
-
+import dj_database_url
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -97,15 +97,14 @@ STORAGES = {
 #     }
 # }
 
+
+# Replace the SQLite DATABASES configuration with PostgreSQL:
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ooooo',
-        'USER': 'ooooo_user',
-        'PASSWORD': 'LvjJnOY80obYOAcAODZpqcMauOiZ7P94',
-        'HOST': 'dpg-csmc7pi3esus73dufnsg-a',
-        'PORT': '5432',
-    }
+    'default': dj_database_url.config(
+        # Replace this value with your local database's connection string.
+        default='postgresql://ooooo_user:LvjJnOY80obYOAcAODZpqcMauOiZ7P94@dpg-csmc7pi3esus73dufnsg-a.oregon-postgres.render.com/ooooo',
+        conn_max_age=600
+    )
 }
 
 # Password validation
